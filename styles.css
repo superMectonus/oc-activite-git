@@ -1,13 +1,23 @@
-body {
-    font-family: ubuntu;
-    font-size: 18px;
-    margin: 0 200px;
+html {
+    height: 100%;
 }
 
-header, footer {
+body {
+    position: relative;
+    font-family: ubuntu;
+    font-size: 18px;
+    margin: 0 200px 150px;
+    min-height: 100%;
+}
+
+header, nav, footer {
     margin: 0 -200px;
     color: #fff;
+    background-color: #004541;
 }
+
+
+
 
 header {
     display: flex;
@@ -34,18 +44,50 @@ header strong {
     font-size: 1.5em;
 }
 
+
+
+
+nav ul {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 50px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: white;
+}
+
+
 section h2 {
-    margin-top:  50px;
+    margin-top:  0;
     color: #3c009f;
 }
 
-section p {
+section {
+    overflow: hidden;
+}
+
+section > p {
     color: #793eda;
 }
 
+section img {
+    height: 250px;
+    float: left;
+    margin: 0 30px 20px 0;
+}
+
 footer {
-    background-color: #004541;
-    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    bottom: -150px;
     padding: 10px 200px;
     text-align: center;
 }
