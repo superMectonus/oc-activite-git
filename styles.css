@@ -1,0 +1,51 @@
+body {
+    font-family: ubuntu;
+    font-size: 18px;
+    margin: 0 200px;
+}
+
+header, footer {
+    margin: 0 -200px;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: url(images/fond-accueil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header > * {
+    margin: 0;
+    text-shadow: 0 0 10px #002;
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+header strong {
+    font-size: 1.5em;
+}
+
+section h2 {
+    margin-top:  50px;
+    color: #3c009f;
+}
+
+section p {
+    color: #793eda;
+}
+
+footer {
+    background-color: #004541;
+    margin-top: 50px;
+    padding: 10px 200px;
+    text-align: center;
+}
